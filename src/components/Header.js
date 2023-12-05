@@ -67,12 +67,7 @@ const Header = () => {
 
             <ul id="nav-menu">
               <li>
-                <a href="#" className="active">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="http://www.google.com" target="_blank">
+                <a href="http://www.google.com" target="_blank" c>
                   Properties
                 </a>
               </li>

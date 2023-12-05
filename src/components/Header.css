@@ -32,53 +32,6 @@ body {
   justify-content: space-between;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: #f69314;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 300;
-}
-
-h4 {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-h5 {
-  font-size: 1rem;
-  font-family: "Playfair Display", serif;
-}
-
-p {
-  margin: 0 0 1rem;
-}
-
 button.rounded {
   background: #f69314;
   border: none;
@@ -124,6 +77,7 @@ header {
 
 header ul {
   list-style-type: none;
+  padding-top: 15px;
 }
 
 header ul li {
@@ -164,13 +118,15 @@ header ul.is-sticky li a.active {
   #nav-menu {
     display: none;
     position: absolute;
-    top: 70px; /* Adjust as needed based on your header height */
+    margin-top: 70px; /* Adjust as needed based on your header height */
     left: 0;
     width: 100%;
     background-color: #e4e4e4;
     z-index: 2;
   }
-
+  .HeaderButton {
+    margin-bottom: 30px;
+  }
   #nav-menu.open {
     display: block;
   }
