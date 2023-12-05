@@ -1,7 +1,7 @@
 // App.js
 import React from "react";
 import Header from "./components/Header";
-import Homepage from "./components/Homepage";
+import Homepage from "./components/Hero";
 import Footer from "./components/Footer";
 import "./App.css"; // You can create this file for your global styles
 
