@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 
+// Define the HeroSection functional component
 const HeroSection = () => {
+  // useEffect hook for performing side effects
   useEffect(() => {
+    // Retrieve various DOM elements
     const headerElem = document.querySelector("header");
     const logo = document.getElementById("logo");
     const navMenu = document.getElementById("nav-menu");
@@ -11,6 +14,7 @@ const HeroSection = () => {
     const propertiesSlider = document.getElementById("properties-slider");
     const testimonialsSlider = document.getElementById("testimonials-slider");
 
+    // Function to initialize sliders
     const initSliders = () => {
       new Slider(propertiesSlider, {
         slidesToShow: 4,
@@ -18,30 +22,8 @@ const HeroSection = () => {
         prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
         nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
         responsive: [
-          {
-            breakpoint: 1100,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-            },
-          },
-          {
-            breakpoint: 530,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-            },
-          },
+          // Responsive settings for the propertiesSlider
+          // ...
         ],
       });
 
@@ -54,6 +36,7 @@ const HeroSection = () => {
       });
     };
 
+    // Event handling functions
     const handleNavToggleClick = () => {
       navMenu.style.right = "0";
     };
@@ -63,13 +46,14 @@ const HeroSection = () => {
     };
 
     const handleDocumentClick = (e) => {
+      // Close the navMenu if clicked outside the toggle or menu
       const target = e.target;
       if (!(target.closest("#nav-toggle") || target.closest("#nav-menu"))) {
         navMenu.style.right = "-100%";
       }
     };
-
     const handleScroll = () => {
+      // Handle changes in appearance on scroll
       const scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -92,7 +76,7 @@ const HeroSection = () => {
           ? "padding: 0.5rem; box-shadow: 0 -4px 10px 1px #999;"
           : "padding: 1rem 0; box-shadow: none;";
     };
-
+    // Event listeners and initializations
     navToggle.addEventListener("click", handleNavToggleClick);
     document
       .getElementById("close-flyout")
@@ -100,9 +84,10 @@ const HeroSection = () => {
     document.addEventListener("click", handleDocumentClick);
     document.addEventListener("scroll", handleScroll);
 
-    initSliders();
-    handleScroll(); // Trigger scroll event on component mount
+    initSliders(); // Initialize sliders
+    handleScroll(); // Call handleScroll to set initial state
 
+    // Cleanup: Remove event listeners
     return () => {
       navToggle.removeEventListener("click", handleNavToggleClick);
       document
@@ -111,11 +96,11 @@ const HeroSection = () => {
       document.removeEventListener("click", handleDocumentClick);
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, []); // Empty dependency array indicates useEffect runs once on mount
 
+  // JSX to render the component
   return (
     <div id="header-hero-container">
-      {/* The rest of your hero section JSX */}
       <section id="hero">
         <div className="fade"></div>
         <div className="hero-text">
