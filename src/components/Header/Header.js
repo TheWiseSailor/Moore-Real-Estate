@@ -1,9 +1,9 @@
 // Header.js
 /* global $ */
 import React, { useEffect } from "react";
-import "../components/Header.css";
+import "../Header/Header.css";
 import $ from "jquery";
-import hamburgerImage from "./images/modern.png";
+import hamburgerImage from "../images/modern.png";
 const Header = () => {
   useEffect(() => {
     const navToggle = $("#nav-toggle");
