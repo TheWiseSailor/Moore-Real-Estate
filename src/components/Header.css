@@ -106,7 +106,7 @@ p.large-paragraph {
 header {
   background: transparent;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(105, 69, 69, 0.1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -142,7 +142,7 @@ header ul li a {
 }
 
 header ul.is-sticky li a {
-  color: #000;
+  color: #e2e2e2;
 }
 
 header ul li a:hover,
@@ -161,14 +161,13 @@ header ul.is-sticky li a.active {
   header {
     padding: 1rem;
   }
-
   #nav-menu {
     display: none;
     position: absolute;
     top: 70px; /* Adjust as needed based on your header height */
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #e4e4e4;
     z-index: 2;
   }
 
@@ -205,12 +204,8 @@ header ul.is-sticky li a.active {
   }
 
   .hamburger-menu img {
-    width: 30px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
     height: auto;
-  }
-  @media (min-width: 769px) {
-    .hamburger-menu {
-      display: none;
-    }
+    margin-top: -10px;
   }
 }
