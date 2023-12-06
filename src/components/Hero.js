@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
-
+import AOSInitializer from "./AOS/AOSInitializer";
 // Define the HeroSection functional component
 const HeroSection = () => {
   // useEffect hook for performing side effects
@@ -101,8 +101,14 @@ const HeroSection = () => {
       <section id="hero">
         <div className="fade"></div>
         <div className="hero-text">
-          <h1>Buy and sell real estate properties</h1>
-          <p>Lorem ipsum dolor sit amet consectectur adipisicing elit...</p>
+          <AOSInitializer />
+          <h1 data-aos="fade-down" data-aos-duration="3000">
+            Buy and sell real estate properties
+          </h1>
+          <AOSInitializer />
+          <p data-aos="fade-up" data-aos-duration="3000">
+            Lorem ipsum dolor sit amet consectectur adipisicing elit...
+          </p>
         </div>
       </section>
     </div>
