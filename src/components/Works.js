@@ -3,25 +3,37 @@ import "../App.css";
 import AOSInitializer from "./AOS/AOSInitializer";
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works">
-      <AOSInitializer />
+    <section id="how-it-works" data-aos="fade-down" data-aos-duration="2000">
       <div className="container">
+        <AOSInitializer />
         <h2>How It Works</h2>
         <div className="flex">
           <div>
-            <span className="fas fa-home " data-aos="fade-left"></span>
+            <span
+              className="fas fa-home "
+              data-aos="fade-down"
+              data-aos-duration="3000"
+            ></span>
             <h4>Find a Property.</h4>
             <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
           </div>
 
           <div>
-            <span className="fas fa-dollar-sign"></span>
+            <span
+              className="fas fa-dollar-sign"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+            ></span>
             <h4>Buy a Property.</h4>
             <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
           </div>
 
           <div>
-            <span className="fas fa-chart-line"></span>
+            <span
+              className="fas fa-chart-line"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+            ></span>
             <h4>Investing.</h4>
             <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
           </div>
