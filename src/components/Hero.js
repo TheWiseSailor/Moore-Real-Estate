@@ -21,10 +21,7 @@ const HeroSection = () => {
         slidesToScroll: 1,
         prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
         nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
-        responsive: [
-          // Responsive settings for the propertiesSlider
-          // ...
-        ],
+        responsive: [],
       });
 
       new Slider(testimonialsSlider, {
