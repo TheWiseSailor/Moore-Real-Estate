@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../App";
 import $ from "jquery";
 import hamburgerImage from "../components/images/modern.png";
-
+import AOSInitializer from "./AOS/AOSInitializer";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -59,8 +59,9 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "sticky-header" : ""}>
+      <AOSInitializer />
       <div className="flex container">
-        <a id="logo" href="#">
+        <a id="logo" href="#" data-aos="fade-down" data-aos-duration="3000">
           Moore Real-estate.
         </a>
         <nav>
@@ -70,13 +71,19 @@ const Header = () => {
             <span className="strip"></span>
             <span className="strip"></span>
           </button>
-
-          <ul id="nav-menu">
+          <AOSInitializer />
+          <ul id="nav-menu" data-aos="fade-down" data-aos-duration="3000">
             <li>
-              <a href="http://www.google.com" target="_blank">
+              <a
+                href="http://www.google.com"
+                target="_blank"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
                 Properties
               </a>
             </li>
+
             <li>
               <a href="#">Agents</a>
             </li>

@@ -102,11 +102,11 @@ const HeroSection = () => {
         <div className="fade"></div>
         <div className="hero-text">
           <AOSInitializer />
-          <h1 data-aos="fade-down" data-aos-duration="3000">
+          <h1 data-aos="fade-left" data-aos-duration="3000">
             Buy and sell real estate properties
           </h1>
           <AOSInitializer />
-          <p data-aos="fade-up" data-aos-duration="3000">
+          <p data-aos="fade-right" data-aos-duration="3000">
             Lorem ipsum dolor sit amet consectectur adipisicing elit...
           </p>
         </div>
