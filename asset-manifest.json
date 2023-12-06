@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TheWiseSailor/Moore-Real-Estate/static/css/main.bb70c091.css",
+    "main.js": "/TheWiseSailor/Moore-Real-Estate/static/js/main.67b77a75.js",
+    "static/js/787.1fcb410e.chunk.js": "/TheWiseSailor/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js",
+    "index.html": "/TheWiseSailor/Moore-Real-Estate/index.html",
+    "main.bb70c091.css.map": "/TheWiseSailor/Moore-Real-Estate/static/css/main.bb70c091.css.map",
+    "main.67b77a75.js.map": "/TheWiseSailor/Moore-Real-Estate/static/js/main.67b77a75.js.map",
+    "787.1fcb410e.chunk.js.map": "/TheWiseSailor/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb70c091.css",
+    "static/js/main.67b77a75.js"
+  ]
+}
