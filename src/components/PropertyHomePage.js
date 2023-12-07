@@ -4,6 +4,7 @@ import Listing2Image from "../components/images/PropertyHomepageImages/Listing2.
 import Listing3Image from "../components/images/PropertyHomepageImages/Listing3.png";
 import Listing4Image from "../components/images/PropertyHomepageImages/Listing4.png";
 import Listing5Image from "../components/images/PropertyHomepageImages/Listing5.png";
+import AOSInitializer from "./AOS/AOSInitializer";
 
 import "../App.css";
 
@@ -47,19 +48,34 @@ const PropertyHomePage = () => {
   ];
 
   return (
-    <div className="property-container">
-      <h1 className="Todays-Title">Today's Property Listings</h1>
-      {topProperties.map((property) => (
-        <div key={property.id} className="property-card">
-          <img src={property.image} alt={`Property ${property.id}`} />
-          <div className="property-details">
-            <p>{property.price}</p>
-            <p>{property.details}</p>
-            <p className="property-address">{property.address}</p>
-            <button className="green-button">View!</button>
+    <div>
+      <AOSInitializer />
+      <div className="property-container">
+        <AOSInitializer />
+        <h1
+          className="Todays-Title"
+          data-aos="fade-bottom"
+          data-aos-duration="3000"
+        >
+          Today's Property Listings
+        </h1>
+        {topProperties.map((property, index) => (
+          <div
+            key={property.id}
+            className="property-card"
+            data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+            data-aos-duration="3000"
+          >
+            <img src={property.image} alt={`Property ${property.id}`} />
+            <div className="property-details">
+              <p>{property.price}</p>
+              <p>{property.details}</p>
+              <p className="property-address">{property.address}</p>
+              <button className="green-button">View!</button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
