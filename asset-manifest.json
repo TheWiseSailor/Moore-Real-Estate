@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/Moore-Real-Estate/static/css/main.ce4b834f.css",
-    "main.js": "/Moore-Real-Estate/static/js/main.d5291310.js",
+    "main.css": "/Moore-Real-Estate/static/css/main.a950b484.css",
+    "main.js": "/Moore-Real-Estate/static/js/main.83550439.js",
     "static/js/787.1fcb410e.chunk.js": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js",
+    "static/media/Listing4.png": "/Moore-Real-Estate/static/media/Listing4.ecc5fb6a1d7a1d14ff20.png",
+    "static/media/Listing3.png": "/Moore-Real-Estate/static/media/Listing3.e95c2acca92c1ca69ee4.png",
+    "static/media/Listing2.png": "/Moore-Real-Estate/static/media/Listing2.9d9be4a09be31df79ec2.png",
+    "static/media/Listing1.png": "/Moore-Real-Estate/static/media/Listing1.6b03ffa043983bc80611.png",
+    "static/media/Listing5.png": "/Moore-Real-Estate/static/media/Listing5.0f5cce4c781cf957b752.png",
     "index.html": "/Moore-Real-Estate/index.html",
-    "main.ce4b834f.css.map": "/Moore-Real-Estate/static/css/main.ce4b834f.css.map",
-    "main.d5291310.js.map": "/Moore-Real-Estate/static/js/main.d5291310.js.map",
+    "main.a950b484.css.map": "/Moore-Real-Estate/static/css/main.a950b484.css.map",
+    "main.83550439.js.map": "/Moore-Real-Estate/static/js/main.83550439.js.map",
     "787.1fcb410e.chunk.js.map": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce4b834f.css",
-    "static/js/main.d5291310.js"
+    "static/css/main.a950b484.css",
+    "static/js/main.83550439.js"
   ]
 }
