@@ -41,14 +41,14 @@ const PropertyHomePage = () => {
       id: 5,
       image: Listing5Image,
       price: "$900,000 / $9-18k Month",
-      details: "6 beds / 3.5 baths / 3000 sqft",
+      details: "2 beds / 3.5 baths / 3000 sqft",
       address: "Cape Fear, NC",
     },
   ];
 
   return (
     <div className="property-container">
-      <h1>Today's Property Listings</h1>
+      <h1 className="Todays-Title">Today's Property Listings</h1>
       {topProperties.map((property) => (
         <div key={property.id} className="property-card">
           <img src={property.image} alt={`Property ${property.id}`} />
