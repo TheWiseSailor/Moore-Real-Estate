@@ -54,7 +54,7 @@ const PropertyHomePage = () => {
         <AOSInitializer />
         <h1
           className="Todays-Title"
-          data-aos="fade-bottom"
+          data-aos="fade-down"
           data-aos-duration="3000"
         >
           Today's Property Listings
@@ -63,7 +63,7 @@ const PropertyHomePage = () => {
           <div
             key={property.id}
             className="property-card"
-            data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+            data-aos={index % 2 === 0 ? "fade-up" : "fade-down"}
             data-aos-duration="3000"
           >
             <img src={property.image} alt={`Property ${property.id}`} />
