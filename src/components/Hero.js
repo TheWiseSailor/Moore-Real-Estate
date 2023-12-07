@@ -107,7 +107,10 @@ const HeroSection = () => {
           </h1>
           <AOSInitializer />
           <p data-aos="fade-right" data-aos-duration="3000">
-            Lorem ipsum dolor sit amet consectectur adipisicing elit...
+            {/* Explore a diverse range of real estate listings and find your dream
+            home or property. */}
+            Our platform makes buying and selling properties seamless and
+            hassle-free, providing you with the best real estate experience.
           </p>
         </div>
       </section>
