@@ -35,7 +35,7 @@ const PropertyHomePage = () => {
       image: Listing4Image,
       price: "$800,000 / $8-16k Month",
       details: "5 beds / 4 baths / 2500 sqft",
-      address: "Wrightsville Beach, NC",
+      address: "Wrightsville, NC",
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ const PropertyHomePage = () => {
             <p>{property.price}</p>
             <p>{property.details}</p>
             <p className="property-address">{property.address}</p>
-            <button className="green-button">Click for more</button>
+            <button className="green-button">View!</button>
           </div>
         </div>
       ))}

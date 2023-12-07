@@ -268,6 +268,7 @@ header ul.is-sticky li a.active {
   margin: 0;
   padding: 4px;
   font-size: 14px;
+  padding-right: 20px;
 }
 
 .property-details p:first-child {
@@ -297,7 +298,7 @@ header ul.is-sticky li a.active {
   background-color: #26ff31;
 }
 .green-button {
-  background-color: #007004;
+  background-color: #0065fdc7;
   border: none;
   color: white;
   padding: 10px 20px;
