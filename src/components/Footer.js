@@ -3,19 +3,14 @@ import React from "react";
 import "../App";
 const Footer = () => {
   return (
-    <footer>
-      <div className="flex container">
-        <div id="footer-logo">
-          <a href="#">Moore Real-estate.</a>
-        </div>
-        <ul id="footer-links">
-          <li>
-            <a href="#">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#">Terms of Service</a>
-          </li>
-        </ul>
+    <footer className="footer">
+      <div className="footer-left">
+        <h2>Left Content</h2>
+        <p>Some information about the left side</p>
+      </div>
+      <div className="footer-right">
+        <h2>Right Content</h2>
+        <p>Some information about the right side</p>
       </div>
     </footer>
   );
