@@ -38,13 +38,20 @@ const PropertyHomePage = () => {
       details: "5 beds / 4 baths / 2500 sqft",
       address: "Wrightsville, NC",
     },
-    {
-      id: 5,
-      image: Listing5Image,
-      price: "$900,000 / $9-18k Month",
-      details: "2 beds / 3.5 baths / 3000 sqft",
-      address: "Cape Fear, NC",
-    },
+    // {
+    //   id: 5,
+    //   image: Listing5Image,
+    //   price: "$900,000 / $9-18k Month",
+    //   details: "2 beds / 3.5 baths / 3000 sqft",
+    //   address: "Cape Fear, NC",
+    // },
+    // {
+    //   id: 5,
+    //   image: Listing5Image,
+    //   price: "$900,000 / $9-18k Month",
+    //   details: "2 beds / 3.5 baths / 3000 sqft",
+    //   address: "Cape Fear, NC",
+    // },
   ];
 
   return (

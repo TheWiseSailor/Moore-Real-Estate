@@ -1,16 +1,34 @@
-// Footer.js
 import React from "react";
-import "../App";
+import "../App.css";
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <h2>Left Content</h2>
-        <p>Some information about the left side</p>
+        <div className="social-logos">
+          {/* Instagram Logo */}
+          <img
+            src="/path/to/instagram-logo.png"
+            alt="Instagram"
+            className="social-logo"
+          />
+
+          {/* Facebook Logo */}
+          <img
+            src="/path/to/facebook-logo.png"
+            alt="Facebook"
+            className="social-logo"
+          />
+
+          {/* Twitter Logo (latest version) */}
+          <img
+            src="/path/to/twitter-logo-x.png"
+            alt="Twitter"
+            className="social-logo"
+          />
+        </div>
       </div>
       <div className="footer-right">
-        <h2>Right Content</h2>
-        <p>Some information about the right side</p>
+        <p>Copyright &copy; 2023 All rights reserved | Moore Real Estate</p>
       </div>
     </footer>
   );

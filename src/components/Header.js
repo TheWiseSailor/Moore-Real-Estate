@@ -62,7 +62,7 @@ const Header = () => {
       <AOSInitializer />
       <div className="flex container">
         <a id="logo" href="#" data-aos="fade-down" data-aos-duration="3000">
-          Moore Real-estate.
+          Moore Real Estate.
         </a>
         <nav>
           <button id="nav-toggle" className="hamburger-menu">
