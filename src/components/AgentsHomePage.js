@@ -3,6 +3,9 @@
 import React from "react";
 import agent1ImageUrl from "./images/AgentHomepageImages/SamanthaBennett.png";
 import agent2ImageUrl from "./images/AgentHomepageImages/AnnaMae.png";
+import agent3ImageUrl from "./images/AgentHomepageImages/ZachHolland.png";
+import agent4ImageUrl from "./images/AgentHomepageImages/KenLowell.png";
+
 import "../App.css";
 
 const RealEstateAgents = () => {
@@ -27,6 +30,26 @@ const RealEstateAgents = () => {
         />
         <div className="agent-details">
           <div className="agent-name">Anna Mae</div>
+        </div>
+      </div>
+      <div className="agent-card">
+        <img
+          src={agent3ImageUrl}
+          alt="Real Estate Agent 3"
+          className="agent-image"
+        />
+        <div className="agent-details">
+          <div className="agent-name">Zach Holland</div>
+        </div>
+      </div>
+      <div className="agent-card">
+        <img
+          src={agent4ImageUrl}
+          alt="Real Estate Agent 4"
+          className="agent-image"
+        />
+        <div className="agent-details">
+          <div className="agent-name">Ken Lowel</div>
         </div>
       </div>
     </div>
