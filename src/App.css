@@ -394,6 +394,11 @@ h1 {
   .agent-card {
     width: 80%;
   }
+
+  .agent-image {
+    height: 300;
+    min-height: 400px;
+  }
 }
 /* Footer.css */
 
