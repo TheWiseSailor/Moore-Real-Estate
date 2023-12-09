@@ -49,7 +49,7 @@ const RealEstateAgents = () => {
           className="agent-image"
         />
         <div className="agent-details">
-          <div className="agent-name">Ken Lowel</div>
+          <div className="agent-name">Ken Lowell</div>
         </div>
       </div>
     </div>
