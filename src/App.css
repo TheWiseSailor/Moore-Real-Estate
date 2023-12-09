@@ -351,7 +351,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .agent-card {
@@ -361,7 +361,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   width: 250px;
-  margin: 10px; /* Add some space between cards */
+  margin: 40px; /* Add some space between cards */
 }
 
 .agent-card:hover {

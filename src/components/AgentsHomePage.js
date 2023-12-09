@@ -8,8 +8,8 @@ import "../App.css";
 const RealEstateAgents = () => {
   return (
     <div className="real-estate-agents-container">
-      <h1 className="AgentHomepage">Meet Our Agents!</h1>
-      <div className="agent-card">
+      <h1 className="AgentHomepage mb-12">Meet Our Agents!</h1>
+      <div className="agent-card ">
         <img
           src={agent1ImageUrl}
           alt="Real Estate Agent 1"
@@ -26,10 +26,9 @@ const RealEstateAgents = () => {
           className="agent-image"
         />
         <div className="agent-details">
-          <div className="agent-name">AnnaMae</div>
+          <div className="agent-name">Anna Mae</div>
         </div>
       </div>
-      {/* Add more agent cards as needed */}
     </div>
   );
 };
