@@ -6,6 +6,7 @@ import PropertyHomepage from "./components/PropertyHomePage";
 import AgentHomePage from "./components/AgentsHomePage";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 import "./App.css"; // You can create this file for your global styles
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Works />
       <PropertyHomepage />
+      <AboutUs />
       <AgentHomePage />
       <Footer />
     </div>

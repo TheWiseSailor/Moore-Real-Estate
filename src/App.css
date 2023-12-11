@@ -344,6 +344,106 @@ h1 {
     font-size: 18px;
   }
 }
+
+/* ABOUT US SECTION  */
+/* Add styles for the about-us-container */
+.about-us-container {
+  padding: 40px 0;
+}
+
+/* Add styles for the about-us-content */
+.about-us-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Add styles for the about-us-text */
+.about-us-text h2 {
+  text-align: center;
+}
+
+/* Add styles for the about-us-images container */
+.about-us-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Add styles for the about-us-image */
+.about-us-image {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+/* Add styles for responsive layout */
+@media (min-width: 1500px) {
+  .AboutUsOne {
+    position: absolute;
+    margin-left: 570px;
+    max-width: 450px;
+    margin-top: -260px;
+  }
+  .AboutUsTwo {
+    position: absolute;
+    margin-left: -530px;
+    max-width: 450px;
+    margin-top: 155px;
+  }
+  .about-us-content {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1499px) {
+  .AboutUsOne {
+    position: absolute;
+    margin-left: 10px;
+    max-width: 400px;
+    margin-top: 190px;
+  }
+  .AboutUsTwo {
+    position: absolute;
+    margin-left: 10px;
+    max-width: 400px;
+    margin-top: -280px;
+  }
+  .about-us-content {
+    max-width: 100%; /* Take full width */
+    margin: 0 auto;
+  }
+  .about-us-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .about-us-image {
+    width: 48%; /* Adjust as needed for the desired spacing */
+  }
+
+  .about-us-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add responsive styles for small screens */
+@media (max-width: 767px) {
+  .about-us-content {
+    padding: 0 10px;
+  }
+
+  .about-us-text h2 {
+    font-size: 24px;
+  }
+
+  .about-us-image {
+    width: 100%;
+  }
+}
+
+/* END OF ABOUT US */
+
 /* Agent Homepageimages */
 
 .real-estate-agents-container {
