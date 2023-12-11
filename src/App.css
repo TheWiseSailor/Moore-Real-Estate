@@ -369,7 +369,6 @@ h1 {
 .about-us-image {
   width: 100%;
   max-width: 450px;
-  margin-bottom: 100px;
 }
 /* Add responsive styles for small screens */
 
@@ -396,7 +395,23 @@ h1 {
     margin: 0 auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1150px) {
+  .AboutImage1 {
+    padding-left: 40px;
+  }
+  .AboutUsOne {
+    padding-left: 60px;
+    width: 350px;
+  }
+  .AboutUsTwo {
+    padding-left: 100px;
+    width: 350px;
+  }
+  .AboutImage2 {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 850px) {
   .AboutImage1 {
     width: 100%;
     max-width: 300px;
@@ -419,7 +434,7 @@ h1 {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 850px) {
   .about-us-image {
     max-width: 100%;
   }
@@ -434,54 +449,59 @@ h1 {
   .AboutUsTwo {
     position: absolute;
     margin-left: -530px;
-    max-width: 450px;
-    margin-top: 155px;
+    max-width: 430px;
+    margin-top: 255px;
+    padding-top: 250px;
   }
 
   .about-us-content {
     max-width: 1050px;
     margin: 0 auto;
   }
-}
-
-@media (max-width: 1499px) {
-  .AboutUsOne {
-    position: absolute;
-    margin-left: 10px;
+  .AboutImage1 {
+    width: 100%;
     max-width: 400px;
-    margin-top: 190px;
   }
-
-  .AboutUsTwo {
-    position: absolute;
-    margin-left: 10px;
-    max-width: 400px;
-    margin-top: -280px;
-  }
-
-  .about-us-content {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .about-us-content {
-    max-width: 900px;
-    margin: 0 auto;
+  .AboutImage2 {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 270px;
   }
 }
+/* 
 
 /* Responsive styles for small screens */
-@media (max-width: 767px) {
+/* Add responsive styles for small screens */
+@media (max-width: 900px) {
+  .AboutImage2 {
+    max-width: 500px;
+  }
+  .AboutImage1 {
+    max-width: 400px;
+  }
+  .about-us-container {
+    text-align: center;
+  }
+  .AboutUsOne,
+  .AboutUsTwo {
+    position: absolute;
+  }
   .about-us-content {
-    padding: 0 10px;
+    padding: 0 px;
+    text-align: center;
   }
 
   .about-us-text h2 {
-    font-size: 24px;
+    font-size: 50px;
+  }
+
+  .about-us-images {
+    justify-content: center;
   }
 
   .about-us-image {
     width: 100%;
+    max-width: 100%; /* Ensure the image takes full width */
   }
 }
 /* END OF ABOUT US */
