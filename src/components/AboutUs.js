@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import AOSInitializer from "./AOS/AOSInitializer";
+import AboutImage1 from "../components/images/AboutUsImages/About1.png";
 const AboutUs = () => {
   return (
     <div className="about-us-container">
@@ -17,10 +18,8 @@ const AboutUs = () => {
         </div>
         <div className="about-us-images d-flex ">
           <div className="about-us-image with-text-on-right">
-            <img
-              src="https://placekitten.com/400/300"
-              alt="Abstract Image Left"
-            />
+            {/* <a href="https://www.vecteezy.com/free-png/real-estate">Real Estate PNGs by Vecteezy</a> */}
+            <img src={AboutImage1} alt="AboutImage1" className="AboutImage1" />
             <p className="AboutUsOne">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
               efficitur urna at est dapibus, a lacinia lorem viverra. Integer

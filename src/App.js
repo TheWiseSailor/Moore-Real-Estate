@@ -7,7 +7,7 @@ import AgentHomePage from "./components/AgentsHomePage";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
-import "./App.css"; // You can create this file for your global styles
+import "./App.css"; 
 
 function App() {
   return (
