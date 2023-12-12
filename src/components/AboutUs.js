@@ -10,7 +10,7 @@ const AboutUs = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
+      setIsMobileView(window.innerWidth <= 768); // Adjusted for mobile devices
     };
 
     // Set initial view
@@ -42,12 +42,12 @@ const AboutUs = () => {
               <img
                 src={TopAboutImage}
                 alt="Top About Us"
-                className="about-us-image"
+                className="about-us-image mobile-image"
               />
               <img
                 src={BottomAboutImage}
                 alt="Bottom About Us"
-                className="about-us-image"
+                className="about-us-image mobile-image"
               />
             </>
           ) : (

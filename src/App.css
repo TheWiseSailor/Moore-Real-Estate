@@ -351,7 +351,24 @@ h1 {
   padding: 40px 0;
   text-align: center; /* Center the container content */
 }
+/* Add other styles as needed */
 
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-image {
+  width: 50%; /* Adjust as needed for your design */
+  max-width: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .mobile-image {
+    width: 100%;
+  }
+}
 /* END OF ABOUT US */
 
 /* Agent Homepageimages */
