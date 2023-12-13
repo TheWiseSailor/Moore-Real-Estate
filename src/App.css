@@ -512,6 +512,9 @@ textarea {
   .contact-form-container {
     width: 100%;
   }
+  .company-info-container {
+    max-height: 370px;
+  }
 }
 
 @media (max-width: 1468px) {
