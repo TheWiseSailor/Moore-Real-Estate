@@ -3,6 +3,7 @@ import "../App.css";
 import Instagram from "../components/SocialLinkImages/Instagram.png";
 import Facebook from "../components/SocialLinkImages/Facebook.png";
 import Twitter from "../components/SocialLinkImages/Twitter.png";
+import AOSInitializer from "./AOS/AOSInitializer";
 
 const ContactForm = () => {
   const initialFormData = {
@@ -61,7 +62,13 @@ const ContactForm = () => {
       >
         Contact Us!
       </h1>
-      <div className="contact-form-container">
+      <AOSInitializer />
+
+      <div
+        className="contact-form-container"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <h2 className="ContactHomePageHeader-container pb-6">Contact Form</h2>
         <form className="form-container" onSubmit={handleSubmit}>
           <label className="label-container" htmlFor="name">
@@ -135,7 +142,11 @@ const ContactForm = () => {
         </form>
       </div>
 
-      <div className="company-info-container">
+      <div
+        className="company-info-container"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <h2 className="pb-12">Our Location</h2>
         <p className="pb-6">29058 North Pole Drive, Wilmington, NC</p>
         <p className="pb-6">Phone: +1 (555) 123-4567</p>
