@@ -5,18 +5,36 @@ import Facebook from "../components/SocialLinkImages/Facebook.png";
 import Twitter from "../components/SocialLinkImages/Twitter.png";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     email: "",
     phone: "",
     subject: "",
     message: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [typing, setTyping] = useState({
+    name: false,
+    email: false,
+    phone: false,
+    subject: false,
+    message: false,
   });
 
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+
+    // Set typing to true once user starts typing
+    setTyping((prevTyping) => ({
+      ...prevTyping,
+      [name]: true,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -24,91 +42,97 @@ const ContactForm = () => {
 
     console.log("Form Data:", formData);
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
+    setFormData(initialFormData);
+    setTyping({
+      name: false,
+      email: false,
+      phone: false,
+      subject: false,
+      message: false,
     });
-    setFormSubmitted(true);
   };
 
   return (
     <div className="contact-container-form">
+      <h1
+        className="ContactUsNow mb-12"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        Contact Us!
+      </h1>
       <div className="contact-form-container">
         <h2 className="ContactHomePageHeader-container pb-6">Contact Form</h2>
-        {formSubmitted ? (
-          <div className="confirmation-message-container">
-            Thank you for reaching out! We'll get back to you soon.
-          </div>
-        ) : (
-          <form className="form-container" onSubmit={handleSubmit}>
-            <label className="label-container" htmlFor="name">
-              Name:
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+        <form className="form-container" onSubmit={handleSubmit}>
+          <label className="label-container" htmlFor="name">
+            Name:
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            placeholder={typing.name ? "" : "John"} // Display placeholder if not typing
+          />
 
-            <label className="label-container" htmlFor="email">
-              Email:
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
+          <label className="label-container" htmlFor="email">
+            Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            placeholder={typing.email ? "" : "john@example.com"}
+          />
 
-            <label className="label-container" htmlFor="phone">
-              Phone:
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
+          <label className="label-container" htmlFor="phone">
+            Phone:
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            placeholder={typing.phone ? "" : "555-123-4567"}
+          />
 
-            <label className="label-container bg-black-600" htmlFor="subject">
-              Subject:
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-            />
+          <label className="label-container bg-black-600" htmlFor="subject">
+            Subject:
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            placeholder={typing.subject ? "" : "Write your subject here!"}
+          />
 
-            <label className="label-container" htmlFor="message">
-              Message:
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="4"
-              required
-            ></textarea>
+          <label className="label-container" htmlFor="message">
+            Message:
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="4"
+            required
+            placeholder={typing.message ? "" : "Write your message here!"}
+          ></textarea>
 
-            <button className="button-container" type="submit">
-              Submit
-            </button>
-          </form>
-        )}
+          <button className="button-container" type="submit">
+            Submit
+          </button>
+        </form>
       </div>
 
       <div className="company-info-container">
