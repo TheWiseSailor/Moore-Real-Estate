@@ -136,9 +136,9 @@ const ContactForm = () => {
       </div>
 
       <div className="company-info-container">
-        <h2>Our Location</h2>
-        <p>29058 North Pole Drive, Wilmington, NC</p>
-        <p>Phone: +1 (555) 123-4567</p>
+        <h2 className="pb-12">Our Location</h2>
+        <p className="pb-6">29058 North Pole Drive, Wilmington, NC</p>
+        <p className="pb-6">Phone: +1 (555) 123-4567</p>
         <div className="social-logos-container">
           <a
             href="https://www.instagram.com/"
