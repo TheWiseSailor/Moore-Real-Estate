@@ -10,7 +10,7 @@ import "../App.css";
 
 const RealEstateAgents = () => {
   return (
-    <div className="real-estate-agents-container">
+    <div className="real-estate-agents-container ">
       <AOSInitializer />
       <h1
         className="AgentHomepage mb-12"

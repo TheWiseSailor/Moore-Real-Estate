@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PropertyHomepage from "./components/PropertyHomePage";
 import AgentHomePage from "./components/AgentsHomePage";
+import ContactsHomePage from "./components/ContactsHomePage";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
-import "./App.css"; 
+
+import "./App.css";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <PropertyHomepage />
       <AboutUs />
       <AgentHomePage />
+      <ContactsHomePage />
+
       <Footer />
     </div>
   );
