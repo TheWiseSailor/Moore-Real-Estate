@@ -565,7 +565,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 30px;
+  padding-top: 10px;
   background-color: #333333d5;
   color: white;
 }

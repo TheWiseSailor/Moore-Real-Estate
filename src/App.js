@@ -1,28 +1,20 @@
 // App.js
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import PropertyHomepage from "./components/PropertyHomePage";
-import AgentHomePage from "./components/AgentsHomePage";
-import ContactsHomePage from "./components/ContactsHomePage";
-import Works from "./components/Works";
 import Footer from "./components/Footer";
-import AboutUs from "./components/AboutUs";
-
-import "./App.css";
+import HomepageRender from "./components/HomepageRender";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <Works />
-      <PropertyHomepage />
-      <AboutUs />
-      <AgentHomePage />
-      <ContactsHomePage />
-
-      <Footer />
+    <div className="min-h-screen">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomepageRender />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

@@ -1,8 +1,9 @@
+// Header.js
 import React, { useEffect, useState } from "react";
-import "../App";
-import $ from "jquery";
-import hamburgerImage from "../components/images/modern.png";
+import { Link } from "react-router-dom";
 import AOSInitializer from "./AOS/AOSInitializer";
+import $ from "jquery";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -61,12 +62,11 @@ const Header = () => {
     <header className={isScrolled ? "sticky-header" : ""}>
       <AOSInitializer />
       <div className="flex container">
-        <a id="logo" href="#" data-aos="fade-down" data-aos-duration="3000">
+        <Link to="/" id="logo" data-aos="fade-down" data-aos-duration="3000">
           Moore Real Estate.
-        </a>
+        </Link>
         <nav>
           <button id="nav-toggle" className="hamburger-menu">
-            <img src={hamburgerImage} alt="Hamburger Icon" />
             <span className="strip"></span>
             <span className="strip"></span>
             <span className="strip"></span>
@@ -83,7 +83,6 @@ const Header = () => {
                 Properties
               </a>
             </li>
-
             <li>
               <a href="#">Agents</a>
             </li>
@@ -94,7 +93,7 @@ const Header = () => {
               <a href="#">News</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li id="close-flyout">
               <span className="fas fa-times"></span>
