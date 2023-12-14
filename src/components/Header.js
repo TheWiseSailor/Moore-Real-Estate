@@ -93,7 +93,7 @@ const Header = () => {
               <a href="#">News</a>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li id="close-flyout">
               <span className="fas fa-times"></span>

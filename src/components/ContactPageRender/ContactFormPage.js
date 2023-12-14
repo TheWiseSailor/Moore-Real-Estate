@@ -1,9 +1,8 @@
+// ContactFormPage.js
 import React, { useState } from "react";
-import "../App.css";
+import AOSInitializer from "../AOS/AOSInitializer.js";
 
-import AOSInitializer from "./AOS/AOSInitializer";
-
-const ContactForm = () => {
+const ContactFormPage = () => {
   const initialFormData = {
     name: "",
     email: "",
@@ -29,7 +28,7 @@ const ContactForm = () => {
       [name]: value,
     }));
 
-    // Set typing to true once user starts typing
+    // Set typing to true once the user starts typing
     setTyping((prevTyping) => ({
       ...prevTyping,
       [name]: true,
@@ -143,4 +142,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactFormPage;
