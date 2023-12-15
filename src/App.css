@@ -517,6 +517,7 @@ textarea {
   }
   .company-info-container {
     max-height: 370px;
+    margin-top: 20px;
   }
 }
 
