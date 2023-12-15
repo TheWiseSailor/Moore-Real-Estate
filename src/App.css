@@ -144,7 +144,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #999;
+  color: #000000;
   font-size: 16px;
   text-decoration: none;
 }
@@ -163,7 +163,7 @@ header ul li a.active,
 header ul.is-sticky li a:hover,
 header ul.is-sticky li a.active,
 #logo {
-  color: #f69314;
+  color: #ffffff;
 }
 /* end: header styles */
 

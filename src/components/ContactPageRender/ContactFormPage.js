@@ -31,7 +31,6 @@ const ContactFormPage = () => {
       [name]: value,
     }));
 
-    // Set typing to true once the user starts typing
     setTyping((prevTyping) => ({
       ...prevTyping,
       [name]: true,
@@ -43,7 +42,6 @@ const ContactFormPage = () => {
 
     console.log("Form Data:", formData);
 
-    // Set formSubmitted to true once the form is submitted
     setFormSubmitted(true);
 
     // Reset form data and typing status
@@ -85,7 +83,7 @@ const ContactFormPage = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              placeholder={typing.name ? "" : "John"} // Display placeholder if not typing
+              placeholder={typing.name ? "" : "John"}
             />
 
             <label className="label-container-page" htmlFor="email">

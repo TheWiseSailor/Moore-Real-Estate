@@ -1,11 +1,17 @@
 .contact-container-form-page {
-  background-color: #ffffff !important;
-}
-.contact-container-form-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url("../ContactPageRender/ContactBg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 }
 
 .contact-form-container-page {
