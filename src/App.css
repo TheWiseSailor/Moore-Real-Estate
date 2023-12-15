@@ -149,17 +149,20 @@ header ul li a {
   text-decoration: none;
 }
 
-header ul.is-sticky li a {
-  color: #000;
+header ul.is-sticky li a,
+#logo {
+  color: #000000;
 }
 
 header ul li a:hover,
-header ul li a.active {
-  color: #fff;
+header ul li a.active,
+#logo {
+  color: #f69314;
 }
 
 header ul.is-sticky li a:hover,
-header ul.is-sticky li a.active {
+header ul.is-sticky li a.active,
+#logo {
   color: #f69314;
 }
 /* end: header styles */
@@ -564,7 +567,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 10px;
   flex-wrap: wrap;
   background-color: #333333d5;
   color: white;
