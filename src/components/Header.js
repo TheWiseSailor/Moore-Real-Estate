@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOSInitializer from "./AOS/AOSInitializer";
 import $ from "jquery";
-
+import hamburgerImage from "./images/modern.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -67,6 +67,7 @@ const Header = () => {
         </Link>
         <nav>
           <button id="nav-toggle" className="hamburger-menu">
+            <img src={hamburgerImage} alt="Hamburger Menu" />
             <span className="strip"></span>
             <span className="strip"></span>
             <span className="strip"></span>

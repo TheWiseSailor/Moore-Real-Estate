@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import AOSInitializer from "../AOS/AOSInitializer.js";
 
+import "./Contact.css";
 const ContactFormPage = () => {
   const initialFormData = {
     name: "",
@@ -51,22 +52,17 @@ const ContactFormPage = () => {
   };
 
   return (
-    <div className="contact-container-form">
-      <h1
-        className="ContactUsNow mb-12"
-        data-aos="fade-up"
-        data-aos-duration="3000"
-      >
-        Contact Us!
-      </h1>
+    <div className="contact-container-form-page">
       <AOSInitializer />
 
       <div
-        className="contact-form-container"
+        className="contact-form-container-page"
         data-aos="fade-up"
         data-aos-duration="3000"
       >
-        <h2 className="ContactHomePageHeader-container pb-6">Contact Form</h2>
+        <h2 className="ContactHomePageHeader-container-page pb-6">
+          Contact Form
+        </h2>
         <form className="form-container" onSubmit={handleSubmit}>
           <label className="label-container" htmlFor="name">
             Name:
@@ -81,7 +77,7 @@ const ContactFormPage = () => {
             placeholder={typing.name ? "" : "John"} // Display placeholder if not typing
           />
 
-          <label className="label-container" htmlFor="email">
+          <label className="label-container-page" htmlFor="email">
             Email:
           </label>
           <input
@@ -94,7 +90,7 @@ const ContactFormPage = () => {
             placeholder={typing.email ? "" : "john@example.com"}
           />
 
-          <label className="label-container" htmlFor="phone">
+          <label className="label-container-page" htmlFor="phone">
             Phone:
           </label>
           <input
@@ -107,7 +103,10 @@ const ContactFormPage = () => {
             placeholder={typing.phone ? "" : "555-123-4567"}
           />
 
-          <label className="label-container bg-black-600" htmlFor="subject">
+          <label
+            className="label-container-page bg-black-600"
+            htmlFor="subject"
+          >
             Subject:
           </label>
           <input
@@ -120,7 +119,7 @@ const ContactFormPage = () => {
             placeholder={typing.subject ? "" : "Write your subject here!"}
           />
 
-          <label className="label-container" htmlFor="message">
+          <label className="label-container-page" htmlFor="message">
             Message:
           </label>
           <textarea
@@ -133,7 +132,7 @@ const ContactFormPage = () => {
             placeholder={typing.message ? "" : "Write your message here!"}
           ></textarea>
 
-          <button className="button-container" type="submit">
+          <button className="button-container-page" type="submit">
             Submit
           </button>
         </form>
