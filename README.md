@@ -1,6 +1,6 @@
 
 # Note this is done at my own pace. <br/>
-# In a work-related field this would be done much quicker and meet the deadline
+# In a work-related field this would meet the deadline
 
 # Getting Started with Create React App
 
