@@ -1,9 +1,9 @@
-// Header.js
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOSInitializer from "./AOS/AOSInitializer";
 import $ from "jquery";
 import hamburgerImage from "./images/modern.png";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
