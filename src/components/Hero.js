@@ -103,11 +103,11 @@ const HeroSection = () => {
         <div className="fade"></div>
         <div className="hero-text">
           <AOSInitializer />
-          <h1 data-aos="fade-left" data-aos-duration="3000">
+          <h1 data-aos="fade-down" data-aos-duration="3000">
             Buy and sell real estate properties
           </h1>
           <AOSInitializer />
-          <p data-aos="fade-right" data-aos-duration="3000">
+          <p data-aos="fade-up" data-aos-duration="3000">
             {/* Explore a diverse range of real estate listings and find your dream
             home or property. */}
             Our platform makes buying and selling properties seamless and
