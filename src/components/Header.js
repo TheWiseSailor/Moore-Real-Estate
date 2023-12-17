@@ -6,27 +6,26 @@ import hamburgerImage from "./images/modern.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Function to handle toggle of the mobile menu
     const handleNavToggle = () => {
       $("#nav-menu").toggleClass("open");
+      setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    // Event binding for navToggle button click
     $("#nav-toggle").click(handleNavToggle);
 
-    // Event binding for close-flyout button click
     $("#close-flyout").click(() => {
       $("#nav-menu").removeClass("open");
+      setIsMobileMenuOpen(false);
     });
 
-    // Event binding for mobile menu item click
     $("#nav-menu a").click(() => {
       $("#nav-menu").removeClass("open");
+      setIsMobileMenuOpen(false);
     });
 
-    // Function to handle window resize and show/hide hamburger menu
     const handleWindowResize = () => {
       if (window.innerWidth >= 769) {
         $(".hamburger-menu").hide();
@@ -35,28 +34,24 @@ const Header = () => {
       }
     };
 
-    // Function to handle scroll and update isScrolled state
     const handleScroll = () => {
       const scrollPosition =
         window.scrollY || document.documentElement.scrollTop;
       setIsScrolled(scrollPosition > 0);
     };
 
-    // Initial check for screen width and scroll position
     handleWindowResize();
     handleScroll();
 
-    // Event binding for window resize and scroll
     $(window).resize(handleWindowResize);
     $(window).scroll(handleScroll);
 
-    // Cleanup function for useEffect
     return () => {
       $(window).off("resize", handleWindowResize);
       $(window).off("scroll", handleScroll);
       $("#nav-toggle").off("click", handleNavToggle);
     };
-  }, []);
+  }, [isMobileMenuOpen]);
 
   return (
     <header className={isScrolled ? "sticky-header" : ""}>
