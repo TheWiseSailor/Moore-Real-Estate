@@ -1,37 +1,43 @@
 import React from "react";
 import classNames from "classnames";
 import "./About.css";
+
 const About = () => {
   return (
     <div className="about-page-container">
-      <h1 className="text-4xl font-bold mb-4">About Us</h1>
-      <p className="text-gray-700 mb-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <div className="centered-container">
+        <h1 className="AboutUsSection text-4xl md:text-6xl font-bold mb-4">
+          Real Estate Made Simple
+        </h1>
+        <p className="About-opening-sentence text-white mb-8 text-lg md:text-2xl font-bold">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
 
-      <div className="team-section">
-        <h2 className="text-2xl font-bold mb-4">Our Team</h2>
+      <div className="team-section-1 pb-56">
+        <h2 className="text-2xl font-bold mb-4 ">Our Team</h2>
 
         <div className={classNames("team-member", "mb-4")}>
           <img
             src="path/to/image1.jpg"
             alt="Team Member 1"
-            className="rounded-full w-16 h-16 mr-4"
+            className="rounded-full w-16 h-16 md:w-20 md:h-20 mr-4"
           />
           <div>
-            <h3 className="text-lg font-semibold">John Doe</h3>
+            <h3 className="text-lg md:text-xl font-semibold">John Doe</h3>
             <p className="text-gray-600">Co-founder</p>
           </div>
         </div>
+
         <div className={classNames("team-member", "mb-4")}>
           <img
             src="path/to/image2.jpg"
             alt="Team Member 2"
-            className="rounded-full w-16 h-16 mr-4"
+            className="rounded-full w-16 h-16 md:w-20 md:h-20 mr-4"
           />
           <div>
-            <h3 className="text-lg font-semibold">Jane Doe</h3>
+            <h3 className="text-lg md:text-xl font-semibold">Jane Doe</h3>
             <p className="text-gray-600">Lead Developer</p>
           </div>
         </div>
