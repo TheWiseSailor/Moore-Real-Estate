@@ -1,0 +1,6 @@
+.about-page-container {
+  background-image: url("./AboutImage1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

@@ -7,6 +7,7 @@ import ContactsHomePage from "./ContactsHomePage";
 import Works from "./Works";
 import AboutUs from "./AboutUs";
 import "../App.css";
+import About from "./About/About";
 const HomepageRender = () => {
   return (
     <div className="App">
