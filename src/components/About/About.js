@@ -13,8 +13,8 @@ const About = () => {
           Real Estate Made Simple
         </h1>
         <p className="About-opening-sentence text-white mb-8 text-lg md:text-2xl font-bold">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Navigating the world of real estate made simple with our streamlined
+          solutions and expertise.
         </p>
       </div>
 
