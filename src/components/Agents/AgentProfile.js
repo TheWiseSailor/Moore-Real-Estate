@@ -4,15 +4,11 @@ import agent1Image from "../images/AgentHomepageImages/SamanthaBennett.png";
 import agent2Image from "../images/AgentHomepageImages/AnnaMae.png";
 import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
 import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import facebookIcon from "./Facebook.png";
 import instagramIcon from "./Instagram.png";
 import twitterIcon from "./Twitter.png";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+
 import "./agents.css";
 
 const agentData = [
