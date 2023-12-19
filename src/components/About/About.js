@@ -1,5 +1,9 @@
 import React from "react";
-import classNames from "classnames";
+import agent1ImageUrl from "../images/AgentHomepageImages/SamanthaBennett.png";
+import agent2ImageUrl from "../images/AgentHomepageImages/AnnaMae.png";
+import agent3ImageUrl from "../images/AgentHomepageImages/ZachHolland.png";
+import agent4ImageUrl from "../images/AgentHomepageImages/KenLowell.png";
+import AOSInitializer from "../AOS/AOSInitializer";
 import "./About.css";
 // make the title for the about us
 // make an areawhere it showcases our team and then when we click our team we can see their info... or just do a simple flip card attribute.
@@ -20,6 +24,66 @@ const About = () => {
 
       <div className="team-section-1 pb-56">
         <h2 className="text-5xl font-bold mb-4 ">Our Team</h2>
+        <div className="real-estate-agents-container ">
+          <AOSInitializer />
+
+          <div
+            className="agent-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src={agent1ImageUrl}
+              alt="Real Estate Agent 1"
+              className="agent-image"
+            />
+            <div className="agent-details">
+              <div className="agent-name">Samantha Bennett</div>
+            </div>
+          </div>
+          <div
+            className="agent-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src={agent2ImageUrl}
+              alt="Real Estate Agent 2"
+              className="agent-image"
+            />
+            <div className="agent-details">
+              <div className="agent-name">Anna Mae</div>
+            </div>
+          </div>
+          <div
+            className="agent-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src={agent3ImageUrl}
+              alt="Real Estate Agent 3"
+              className="agent-image"
+            />
+            <div className="agent-details">
+              <div className="agent-name">Zach Holland</div>
+            </div>
+          </div>
+          <div
+            className="agent-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src={agent4ImageUrl}
+              alt="Real Estate Agent 4"
+              className="agent-image"
+            />
+            <div className="agent-details">
+              <div className="agent-name">Ken Lowell</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
