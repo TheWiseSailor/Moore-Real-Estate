@@ -4,6 +4,7 @@ import agent1Image from "../images/AgentHomepageImages/SamanthaBennett.png";
 import agent2Image from "../images/AgentHomepageImages/AnnaMae.png";
 import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
 import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
+import "./agents.css";
 
 const agentData = [
   {
@@ -42,9 +43,9 @@ const AgentProfile = () => {
   }
 
   return (
-    <div>
+    <div className="AgentProfileBg">
       <h1>{agent.name}</h1>
-      <img src={agent.image} alt={agent.name} style={{ maxWidth: "20%" }} />
+      <img src={agent.image} alt={agent.name} className="AgentImage" />
       <p>{agent.description}</p>
     </div>
   );
