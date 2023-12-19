@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Moore-Real-Estate/static/css/main.99a1e765.css",
-    "main.js": "/Moore-Real-Estate/static/js/main.ea5bfc62.js",
+    "main.css": "/Moore-Real-Estate/static/css/main.e492404e.css",
+    "main.js": "/Moore-Real-Estate/static/js/main.bccb83fe.js",
     "static/js/787.1fcb410e.chunk.js": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js",
     "static/media/ContactBg.jpg": "/Moore-Real-Estate/static/media/ContactBg.707bf172ee3cf4c36b8d.jpg",
     "static/media/AnnaMae.png": "/Moore-Real-Estate/static/media/AnnaMae.d62b5cc5fcac18a7eb42.png",
@@ -17,12 +17,12 @@
     "static/media/Listing1.png": "/Moore-Real-Estate/static/media/Listing1.6b03ffa043983bc80611.png",
     "static/media/Listing5.png": "/Moore-Real-Estate/static/media/Listing5.0f5cce4c781cf957b752.png",
     "index.html": "/Moore-Real-Estate/index.html",
-    "main.99a1e765.css.map": "/Moore-Real-Estate/static/css/main.99a1e765.css.map",
-    "main.ea5bfc62.js.map": "/Moore-Real-Estate/static/js/main.ea5bfc62.js.map",
+    "main.e492404e.css.map": "/Moore-Real-Estate/static/css/main.e492404e.css.map",
+    "main.bccb83fe.js.map": "/Moore-Real-Estate/static/js/main.bccb83fe.js.map",
     "787.1fcb410e.chunk.js.map": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99a1e765.css",
-    "static/js/main.ea5bfc62.js"
+    "static/css/main.e492404e.css",
+    "static/js/main.bccb83fe.js"
   ]
 }
