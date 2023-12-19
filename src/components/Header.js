@@ -79,9 +79,7 @@ const Header = () => {
                 Properties
               </a>
             </li>
-            <li>
-              <a href="#">Agents</a>
-            </li>
+
             <li>
               <Link to="/about">About</Link>
             </li>

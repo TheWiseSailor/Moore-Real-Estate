@@ -20,30 +20,6 @@ const About = () => {
 
       <div className="team-section-1 pb-56">
         <h2 className="text-2xl font-bold mb-4 ">Our Team</h2>
-
-        <div className={classNames("team-member", "mb-4")}>
-          <img
-            src="path/to/image1.jpg"
-            alt="Team Member 1"
-            className="rounded-full w-16 h-16 md:w-20 md:h-20 mr-4"
-          />
-          <div>
-            <h3 className="text-lg md:text-xl font-semibold">John Doe</h3>
-            <p className="text-gray-600">Co-founder</p>
-          </div>
-        </div>
-
-        <div className={classNames("team-member", "mb-4")}>
-          <img
-            src="path/to/image2.jpg"
-            alt="Team Member 2"
-            className="rounded-full w-16 h-16 md:w-20 md:h-20 mr-4"
-          />
-          <div>
-            <h3 className="text-lg md:text-xl font-semibold">Jane Doe</h3>
-            <p className="text-gray-600">Lead Developer</p>
-          </div>
-        </div>
       </div>
     </div>
   );
