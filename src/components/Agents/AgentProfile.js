@@ -4,6 +4,15 @@ import agent1Image from "../images/AgentHomepageImages/SamanthaBennett.png";
 import agent2Image from "../images/AgentHomepageImages/AnnaMae.png";
 import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
 import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import facebookIcon from "./Facebook.png";
+import instagramIcon from "./Instagram.png";
+import twitterIcon from "./Twitter.png";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import "./agents.css";
 
 const agentData = [
@@ -11,7 +20,15 @@ const agentData = [
     id: 1,
     name: "Samantha Bennett",
     image: agent1Image,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Senior Real Estate Agent",
+    location: "123 Main St, Wilmington, NC",
+    phoneNumber: "+1234567890",
+    address: "123 Main St, Cityville",
+    socials: {
+      facebook: "facebook.com/samantha.bennett",
+      twitter: "@samantha_realtor",
+      instagram: "@samantha_realestate",
+    },
   },
   {
     id: 2,
@@ -43,10 +60,61 @@ const AgentProfile = () => {
   }
 
   return (
-    <div className="AgentProfileBg">
-      <h1 className="AgentName">{agent.name}</h1>
-      <img src={agent.image} alt={agent.name} className="AgentImage" />
-      <p className="Description">{agent.description}</p>
+    <div>
+      <div className="AgentProfileBg ">
+        <img src={agent.image} alt={agent.name} className="AgentImage" />
+        <h1 className="AgentName">{agent.name}</h1>
+        <p className="Description">{agent.description}</p>
+
+        {/* Additional Sections */}
+        {agent.location && (
+          <p className="Location">Location: {agent.location}</p>
+        )}
+        {agent.address && <p className="Address">Address: {agent.address}</p>}
+        {agent.phoneNumber && (
+          <p className="PhoneNumber">Phone: {agent.phoneNumber}</p>
+        )}
+
+        {agent.socials && (
+          <div className="SocialLinks">
+            {agent.socials.facebook && (
+              <a
+                href={agent.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={facebookIcon}
+                  alt="Facebook"
+                  className="social-icon"
+                />
+              </a>
+            )}
+            {agent.socials.twitter && (
+              <a
+                href={`https://twitter.com/${agent.socials.twitter}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitterIcon} alt="Twitter" className="social-icon" />
+              </a>
+            )}
+            {agent.socials.instagram && (
+              <a
+                href={`https://instagram.com/${agent.socials.instagram}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={instagramIcon}
+                  alt="Instagram"
+                  className="social-icon"
+                />
+              </a>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

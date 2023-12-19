@@ -13,9 +13,10 @@
   width: 400px !important;
   height: 400px;
   border-radius: 40px;
+  margin-bottom: -120px;
 }
 .Description {
-  padding-top: 40px;
+  font-size: 28px;
 }
 @media (max-width: 600px) {
   .AgentImage {
@@ -31,4 +32,13 @@
     padding-bottom: 30px;
     max-width: 300px;
   }
+}
+
+.SocialLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  margin-right: 10px;
 }
