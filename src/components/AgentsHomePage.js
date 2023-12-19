@@ -63,3 +63,5 @@ const AgentsHomePage = () => {
 };
 
 export default AgentsHomePage;
+
+// PLEASE MAKE THE NAMES ON THE HOMEPAGE PULSE SO THAT THE PEOPLE CAN KNOW, OH HEY, I SHOULD CLICK THAT MAYBE I WILL SEE MORE
