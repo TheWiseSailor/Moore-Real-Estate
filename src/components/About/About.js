@@ -19,7 +19,7 @@ const About = () => {
       </div>
 
       <div className="team-section-1 pb-56">
-        <h2 className="text-2xl font-bold mb-4 ">Our Team</h2>
+        <h2 className="text-5xl font-bold mb-4 ">Our Team</h2>
       </div>
     </div>
   );

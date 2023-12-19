@@ -15,7 +15,8 @@
 }
 
 .AboutUsSection {
-  padding-top: 200px;
+  padding-top: 300px;
+
   color: aliceblue;
   font-size: 80px;
 }
@@ -24,7 +25,6 @@
 .team-section-1 {
   margin: 0 auto;
   text-align: center;
-  padding-top: 100px;
 }
 @media (max-width: 768px) {
   .AboutUsSection {
