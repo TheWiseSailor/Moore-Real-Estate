@@ -46,7 +46,7 @@ const AgentProfile = () => {
     <div className="AgentProfileBg">
       <h1>{agent.name}</h1>
       <img src={agent.image} alt={agent.name} className="AgentImage" />
-      <p>{agent.description}</p>
+      <p className="Description">{agent.description}</p>
     </div>
   );
 };
