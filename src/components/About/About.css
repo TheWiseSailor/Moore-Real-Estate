@@ -24,6 +24,7 @@
 .team-section-1 {
   margin: 0 auto;
   text-align: center;
+  padding-top: 100px;
 }
 @media (max-width: 768px) {
   .AboutUsSection {
@@ -36,7 +37,6 @@
     width: 300px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: -230px;
   }
 
   .text-white {
