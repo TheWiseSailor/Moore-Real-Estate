@@ -17,3 +17,18 @@
 .Description {
   padding-top: 40px;
 }
+@media (max-width: 600px) {
+  .AgentImage {
+    max-width: 60%;
+    max-height: 40%;
+  }
+  .AgentName {
+    margin-top: 20px;
+  }
+  .Description {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-width: 300px;
+  }
+}

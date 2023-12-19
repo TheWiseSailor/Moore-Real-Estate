@@ -44,7 +44,7 @@ const AgentProfile = () => {
 
   return (
     <div className="AgentProfileBg">
-      <h1>{agent.name}</h1>
+      <h1 className="AgentName">{agent.name}</h1>
       <img src={agent.image} alt={agent.name} className="AgentImage" />
       <p className="Description">{agent.description}</p>
     </div>
