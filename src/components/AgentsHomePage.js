@@ -1,41 +1,47 @@
 // the following images are from freepik.com, and unsplash.com
-// RealEstateAgents.jsx
 
 import React from "react";
 import { Link } from "react-router-dom";
 import AOSInitializer from "./AOS/AOSInitializer";
 import "../App.css";
 
+import SamanthaBennettImage from "../components/images/AgentHomepageImages/SamanthaBennett.png";
+import AnnaMaeImage from "../components/images/AgentHomepageImages/AnnaMae.png";
+import ZachHollandImage from "../components/images/AgentHomepageImages/ZachHolland.png";
+import KenLowellImage from "../components/images/AgentHomepageImages/KenLowell.png";
+
 const agentData = [
   {
     id: 1,
     name: "Samantha Bennett",
-    imageUrl: "./images/AgentHomepageImages/SamanthaBennett.png",
+    image: SamanthaBennettImage,
   },
   {
     id: 2,
     name: "Anna Mae",
-    imageUrl: "./images/AgentHomepageImages/AnnaMae.png",
+    image: AnnaMaeImage,
   },
   {
     id: 3,
     name: "Zach Holland",
-    imageUrl: "./images/AgentHomepageImages/ZachHolland.png",
+    image: ZachHollandImage,
   },
   {
     id: 4,
     name: "Ken Lowell",
-    imageUrl: "./images/AgentHomepageImages/KenLowell.png",
+    image: KenLowellImage,
   },
 ];
 
 const AgentCard = ({ agent }) => (
-  <Link to={`/agent/${agent.name}`} className="agent-card" key={agent.id}>
-    <img src={agent.imageUrl} alt={agent.name} className="agent-image" />
+  <div className="agent-card" key={agent.id}>
+    <img src={agent.image} alt={agent.name} className="agent-image" />
     <div className="agent-details">
-      <div className="agent-name">{agent.name}</div>
+      <Link to={`/agent/${agent.name}`} className="agent-name">
+        {agent.name}
+      </Link>
     </div>
-  </Link>
+  </div>
 );
 
 const AgentsHomePage = () => {
