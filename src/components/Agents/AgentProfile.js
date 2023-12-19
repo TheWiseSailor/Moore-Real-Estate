@@ -4,7 +4,7 @@ import agent1Image from "../images/AgentHomepageImages/SamanthaBennett.png";
 import agent2Image from "../images/AgentHomepageImages/AnnaMae.png";
 import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
 import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
-
+import AOSInitializer from "../AOS/AOSInitializer.js";
 import facebookIcon from "./Facebook.png";
 import instagramIcon from "./Instagram.png";
 import twitterIcon from "./Twitter.png";
@@ -16,10 +16,10 @@ const agentData = [
     id: 1,
     name: "Samantha Bennett",
     image: agent1Image,
-    description: "Senior Real Estate Agent",
-    location: "123 Main St, Wilmington, NC",
+    description: "Real Estate Broker",
+
     phoneNumber: "+1234567890",
-    address: "123 Main St, Cityville",
+    address: "513 Main St, Wilmington, NC",
     socials: {
       facebook: "facebook.com/samantha.bennett",
       twitter: "@samantha_realtor",
@@ -30,19 +30,40 @@ const agentData = [
     id: 2,
     name: "Anna Mae",
     image: agent2Image,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Broker Associate Agent",
+    phoneNumber: "+1234567890",
+    address: "693 West Main St, Wilmington, NC",
+    socials: {
+      facebook: "facebook.com/samantha.bennett",
+      twitter: "@AnnaMae_realtor",
+      instagram: "@AnnaMae_realestate",
+    },
   },
   {
     id: 3,
     name: "Zach Holland",
     image: agent3Image,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Senior Real Estate Agent",
+    phoneNumber: "+1234567890",
+    address: "324 South Main St, Wilmington, NC",
+    socials: {
+      facebook: "facebook.com/samantha.bennett",
+      twitter: "@ZachHolland_realtor",
+      instagram: "@ZachH_realestate",
+    },
   },
   {
     id: 4,
     name: "Ken Lowell",
     image: agent4Image,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Senior Real Estate Agent",
+    phoneNumber: "+1234567890",
+    address: "183 North Main St, Wilmington, NC",
+    socials: {
+      facebook: "facebook.com/samantha.bennett",
+      twitter: "@Ken_realtor",
+      instagram: "@Ken_realestate",
+    },
   },
 ];
 
@@ -58,21 +79,41 @@ const AgentProfile = () => {
   return (
     <div>
       <div className="AgentProfileBg ">
-        <img src={agent.image} alt={agent.name} className="AgentImage" />
-        <h1 className="AgentName">{agent.name}</h1>
-        <p className="Description">{agent.description}</p>
+        <AOSInitializer />
+        <img
+          src={agent.image}
+          alt={agent.name}
+          className="AgentImage"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        />
+        <h1 className="AgentName" data-aos="fade-down" data-aos-duration="3000">
+          {agent.name}
+        </h1>
+        <p className="Description" data-aos="fade-up" data-aos-duration="3000">
+          {agent.description}
+        </p>
 
         {/* Additional Sections */}
-        {agent.location && (
-          <p className="Location">Location: {agent.location}</p>
+
+        {agent.address && (
+          <p className="Address" data-aos="fade-up" data-aos-duration="3000">
+            {agent.address}
+          </p>
         )}
-        {agent.address && <p className="Address">Address: {agent.address}</p>}
         {agent.phoneNumber && (
-          <p className="PhoneNumber">Phone: {agent.phoneNumber}</p>
+          <p
+            className="PhoneNumber"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            Phone: {agent.phoneNumber}
+          </p>
         )}
 
         {agent.socials && (
-          <div className="SocialLinks">
+          <div className="SocialLinks ">
+            <AOSInitializer />
             {agent.socials.facebook && (
               <a
                 href={agent.socials.facebook}
@@ -83,6 +124,8 @@ const AgentProfile = () => {
                   src={facebookIcon}
                   alt="Facebook"
                   className="social-icon"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                 />
               </a>
             )}
@@ -92,7 +135,14 @@ const AgentProfile = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={twitterIcon} alt="Twitter" className="social-icon" />
+                <AOSInitializer />
+                <img
+                  src={twitterIcon}
+                  alt="Twitter"
+                  className="social-icon"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                />
               </a>
             )}
             {agent.socials.instagram && (
@@ -105,6 +155,8 @@ const AgentProfile = () => {
                   src={instagramIcon}
                   alt="Instagram"
                   className="social-icon"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
                 />
               </a>
             )}

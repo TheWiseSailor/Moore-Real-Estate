@@ -34,12 +34,21 @@ const agentData = [
 ];
 
 const AgentCard = ({ agent }) => (
-  <div className="agent-card" key={agent.id}>
-    <img src={agent.image} alt={agent.name} className="agent-image" />
-    <div className="agent-details">
-      <Link to={`/agent/${agent.name}`} className="agent-name">
-        {agent.name}
-      </Link>
+  <div>
+    {" "}
+    <AOSInitializer />
+    <div
+      className="agent-card"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      key={agent.id}
+    >
+      <img src={agent.image} alt={agent.name} className="agent-image" />
+      <div className="agent-details">
+        <Link to={`/agent/${agent.name}`} className="agent-name">
+          {agent.name}
+        </Link>
+      </div>
     </div>
   </div>
 );

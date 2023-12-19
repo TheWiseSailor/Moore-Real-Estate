@@ -19,6 +19,7 @@
   font-size: 28px;
   padding-bottom: -20px;
 }
+
 @media (max-width: 600px) {
   .AgentImage {
     max-width: 60%;
@@ -30,14 +31,13 @@
     font-size: 25px;
   }
   .Description {
-    font-size: 14px;
+    font-size: 24px;
     padding-top: 60px;
     padding-bottom: 30px;
     max-width: 300px;
     margin-bottom: -20px;
   }
 }
-
 .SocialLinks {
   display: flex;
   gap: 10px;
