@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomepageRender from "./components/HomepageRender";
 import ContactFormPage from "./components/ContactPageRender/ContactFormPage";
+import AgentProfile from "./components/Agents/AgentProfile";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/" element={<HomepageRender />} />
           <Route path="/Moore-Real-Estate" element={<HomepageRender />} />
           <Route path="/contact" element={<ContactFormPage />} />
+
+          <Route path="/agent/:name" element={<AgentProfile />} />
         </Routes>
         <Footer />
       </Router>
