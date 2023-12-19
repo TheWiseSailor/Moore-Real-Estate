@@ -9,6 +9,9 @@ import "./About.css";
 // make an areawhere it showcases our team and then when we click our team we can see their info... or just do a simple flip card attribute.
 // then make another section about how our team is dedicated to help finding you your future home/realestate/etc.
 // if think of anything else = right it down
+
+// now that I think about it realestate websites dont usually have an about page...
+// so I will integrate the agents info on the main page
 const About = () => {
   return (
     <div className="about-page-container">
