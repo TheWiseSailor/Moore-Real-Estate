@@ -17,6 +17,7 @@
 }
 .Description {
   font-size: 28px;
+  padding-bottom: -20px;
 }
 @media (max-width: 600px) {
   .AgentImage {
@@ -24,13 +25,16 @@
     max-height: 40%;
   }
   .AgentName {
-    margin-top: 20px;
+    margin-bottom: -50px;
+    max-width: 200px;
+    font-size: 25px;
   }
   .Description {
     font-size: 14px;
     padding-top: 20px;
     padding-bottom: 30px;
     max-width: 300px;
+    margin-bottom: -20px;
   }
 }
 
