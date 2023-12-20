@@ -1,0 +1,36 @@
+/* PropertyOfTheDay.module.css */
+
+.PropertyOfTheDayBg {
+  background-color: rgb(193, 218, 226);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.PropertyImage {
+  width: 400px !important;
+  height: 400px;
+  border-radius: 40px;
+}
+
+.PropertyDetails {
+  font-size: 28px;
+}
+
+@media (max-width: 600px) {
+  .PropertyImage {
+    max-width: 60%;
+    max-height: 40%;
+  }
+  .PropertyDetails {
+    font-size: 24px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    max-width: 300px;
+    margin-bottom: -20px;
+  }
+}

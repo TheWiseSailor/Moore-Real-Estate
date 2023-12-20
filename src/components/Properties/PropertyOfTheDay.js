@@ -4,7 +4,7 @@ import Listing1Image from "../images/PropertyHomepageImages/Listing1.png";
 import Listing2Image from "../images/PropertyHomepageImages/Listing2.png";
 import Listing3Image from "../images/PropertyHomepageImages/Listing3.png";
 import Listing4Image from "../images/PropertyHomepageImages/Listing4.png";
-
+import "../Properties/PropertyOfTheDay.css";
 const PropertyOfTheDay = () => {
   const { id } = useParams();
 
@@ -48,12 +48,18 @@ const PropertyOfTheDay = () => {
   }
 
   return (
-    <div>
-      <h1>Property Details</h1>
-      <img src={property.image} alt={`Property ${property.id}`} />
-      <p>{property.price}</p>
-      <p>{property.details}</p>
-      <p>{property.address}</p>
+    <div className="PropertyOfTheDayBg">
+      <h1 className="pt-32">Property Details</h1>
+      <img
+        className="PropertyImage"
+        src={property.image}
+        alt={`Property ${property.id}`}
+      />
+      <div className="PropertyDetails">
+        <p className="">{property.price}</p>
+        <p className="">{property.details}</p>
+        <p className="">{property.address}</p>
+      </div>
     </div>
   );
 };
