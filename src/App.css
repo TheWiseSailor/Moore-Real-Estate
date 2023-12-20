@@ -321,6 +321,16 @@ header ul.is-sticky li a.active,
 .green-button:hover {
   background-color: #45a049;
 }
+
+@media (max-width: 767px) {
+  .green-button {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+    width: 100%;
+    text-decoration: none !important;
+  }
+}
 .property-address {
   display: inline-block;
   margin-right: 10px;
