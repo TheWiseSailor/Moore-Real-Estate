@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HomepageRender from "./components/HomepageRender";
 import ContactFormPage from "./components/ContactPageRender/ContactFormPage";
 import AgentProfile from "./components/Agents/AgentProfile";
+import PropertyOfTheDay from "./components/Properties/PropertyOfTheDay";
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomepageRender />} />
           <Route path="/Moore-Real-Estate" element={<HomepageRender />} />
-          <Route path="/contact" element={<ContactFormPage />} />
-
+          <Route path="/property/:id" element={<PropertyOfTheDay />} />
           <Route path="/agent/:name" element={<AgentProfile />} />
+          <Route path="/contact" element={<ContactFormPage />} />
         </Routes>
         <Footer />
       </Router>
