@@ -1,9 +1,9 @@
 import React from "react";
-import Listing1Image from "../components/images/PropertyHomepageImages/Listing1.png";
-import Listing2Image from "../components/images/PropertyHomepageImages/Listing2.png";
-import Listing3Image from "../components/images/PropertyHomepageImages/Listing3.png";
-import Listing4Image from "../components/images/PropertyHomepageImages/Listing4.png";
-import Listing5Image from "../components/images/PropertyHomepageImages/Listing5.png";
+import { Link } from "react-router-dom";
+import Listing1Image from "./images/PropertyHomepageImages/Listing1.png";
+import Listing2Image from "./images/PropertyHomepageImages/Listing2.png";
+import Listing3Image from "./images/PropertyHomepageImages/Listing3.png";
+import Listing4Image from "./images/PropertyHomepageImages/Listing4.png";
 import AOSInitializer from "./AOS/AOSInitializer";
 
 import "../App.css";
@@ -38,20 +38,6 @@ const PropertyHomePage = () => {
       details: "5 beds / 4 baths / 2500 sqft",
       address: "Wrightsville, NC",
     },
-    // {
-    //   id: 5,
-    //   image: Listing5Image,
-    //   price: "$900,000 / $9-18k Month",
-    //   details: "2 beds / 3.5 baths / 3000 sqft",
-    //   address: "Cape Fear, NC",
-    // },
-    // {
-    //   id: 5,
-    //   image: Listing5Image,
-    //   price: "$900,000 / $9-18k Month",
-    //   details: "2 beds / 3.5 baths / 3000 sqft",
-    //   address: "Cape Fear, NC",
-    // },
   ];
 
   return (
@@ -73,13 +59,15 @@ const PropertyHomePage = () => {
             data-aos="fade-down"
             data-aos-duration="3000"
           >
-            <img src={property.image} alt={`Property ${property.id}`} />
-            <div className="property-details">
-              <p>{property.price}</p>
-              <p>{property.details}</p>
-              <p className="property-address">{property.address}</p>
-              <button className="green-button">View!</button>
-            </div>
+            <Link to={`/property/${property.id}`}>
+              <img src={property.image} alt={`Property ${property.id}`} />
+              <div className="property-details">
+                <p>{property.price}</p>
+                <p>{property.details}</p>
+                <p className="property-address">{property.address}</p>
+                <button className="green-button">View!</button>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
