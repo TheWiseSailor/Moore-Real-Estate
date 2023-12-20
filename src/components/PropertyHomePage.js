@@ -44,7 +44,6 @@ const PropertyHomePage = () => {
     <div>
       <AOSInitializer />
       <div className="property-container">
-        <AOSInitializer />
         <h1
           className="Todays-Title"
           data-aos="fade-down"
@@ -52,22 +51,25 @@ const PropertyHomePage = () => {
         >
           Today's Property Listings
         </h1>
-        {topProperties.map((property, index) => (
+        {topProperties.map((property) => (
           <div
             key={property.id}
             className="property-card"
             data-aos="fade-down"
             data-aos-duration="3000"
           >
-            <Link to={`/property/${property.id}`}>
-              <img src={property.image} alt={`Property ${property.id}`} />
-              <div className="property-details">
-                <p>{property.price}</p>
-                <p>{property.details}</p>
-                <p className="property-address">{property.address}</p>
+            <img
+              src={property.image}
+              alt={`Property ${property.id} - ${property.address}`}
+            />
+            <div className="property-details">
+              <p>{property.price}</p>
+              <p>{property.details}</p>
+              <p className="property-address">{property.address}</p>
+              <Link key={property.id} to={`/property/${property.id}`}>
                 <button className="green-button">View!</button>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
