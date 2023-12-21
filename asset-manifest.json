@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Moore-Real-Estate/static/css/main.7d802685.css",
-    "main.js": "/Moore-Real-Estate/static/js/main.ae786288.js",
+    "main.css": "/Moore-Real-Estate/static/css/main.ff2aaae6.css",
+    "main.js": "/Moore-Real-Estate/static/js/main.bb2cb1b7.js",
     "static/js/787.1fcb410e.chunk.js": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js",
-    "static/media/Listing1Image3.jpg": "/Moore-Real-Estate/static/media/Listing1Image3.d2cccc7cd8f014c2fccc.jpg",
+    "static/media/Listing1Image4.jpg": "/Moore-Real-Estate/static/media/Listing1Image4.9dfd9132b77af0f310c3.jpg",
     "static/media/Listing1Image2.jpg": "/Moore-Real-Estate/static/media/Listing1Image2.67e0da51e7ee2e9efc8e.jpg",
+    "static/media/Listing1Image3.jpg": "/Moore-Real-Estate/static/media/Listing1Image3.db4e3de8a84e4cbf7740.jpg",
     "static/media/ContactBg.jpg": "/Moore-Real-Estate/static/media/ContactBg.707bf172ee3cf4c36b8d.jpg",
     "static/media/AnnaMae.png": "/Moore-Real-Estate/static/media/AnnaMae.d62b5cc5fcac18a7eb42.png",
     "static/media/SamanthaBennett.png": "/Moore-Real-Estate/static/media/SamanthaBennett.b1e8beff07d21ac0fd34.png",
@@ -18,12 +19,12 @@
     "static/media/Listing2.png": "/Moore-Real-Estate/static/media/Listing2.9d9be4a09be31df79ec2.png",
     "static/media/Listing1.png": "/Moore-Real-Estate/static/media/Listing1.6b03ffa043983bc80611.png",
     "index.html": "/Moore-Real-Estate/index.html",
-    "main.7d802685.css.map": "/Moore-Real-Estate/static/css/main.7d802685.css.map",
-    "main.ae786288.js.map": "/Moore-Real-Estate/static/js/main.ae786288.js.map",
+    "main.ff2aaae6.css.map": "/Moore-Real-Estate/static/css/main.ff2aaae6.css.map",
+    "main.bb2cb1b7.js.map": "/Moore-Real-Estate/static/js/main.bb2cb1b7.js.map",
     "787.1fcb410e.chunk.js.map": "/Moore-Real-Estate/static/js/787.1fcb410e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d802685.css",
-    "static/js/main.ae786288.js"
+    "static/css/main.ff2aaae6.css",
+    "static/js/main.bb2cb1b7.js"
   ]
 }
