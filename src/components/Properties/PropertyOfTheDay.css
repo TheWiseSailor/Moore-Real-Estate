@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
   .PropertyImage {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 400px;
   }
   .PropertyDetails {
     font-size: 24px;

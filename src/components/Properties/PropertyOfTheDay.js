@@ -1,19 +1,22 @@
 import React from "react";
+// images are from unsplash.com and freepik.com
 import { useParams } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Listing1Image1 from "../images/PropertyHomepageImages/Listing1.png";
-import Listing1Image2 from "../Properties/PropertyOfTheDayImages/Listing1Image2.jpg";
-import Listing1Image3 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing2Image1 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing2Image2 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing2Image3 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing3Image1 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing3Image2 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing3Image3 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing4Image1 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing4Image2 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
-import Listing4Image3 from "../Properties/PropertyOfTheDayImages/Listing1Image3.jpg";
+
+import Listing1Image1 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1.png";
+import Listing1Image2 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image2.jpg";
+import Listing1Image3 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing1Image4 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image4.jpg";
+import Listing2Image1 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing2Image2 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing2Image3 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing3Image1 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing3Image2 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing3Image3 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing4Image1 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing4Image2 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
+import Listing4Image3 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
 import "../Properties/PropertyOfTheDay.css";
 
 const PropertyOfTheDay = () => {
@@ -22,7 +25,7 @@ const PropertyOfTheDay = () => {
   const allProperties = [
     {
       id: 1,
-      images: [Listing1Image1, Listing1Image2, Listing1Image3],
+      images: [Listing1Image1, Listing1Image2, Listing1Image3, Listing1Image4],
       price: "$1,200,000 / $12-20k Month",
       details: "3 beds / 2 baths / 3500 sqft",
       address: "Wilmington, NC",

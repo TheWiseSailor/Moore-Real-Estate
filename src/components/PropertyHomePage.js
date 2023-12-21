@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Listing1Image from "./images/PropertyHomepageImages/Listing1.png";
+import Listing1Image from "../components/Properties/PropertyOfTheDayImages/Listing1/Listing1.png";
 import Listing2Image from "./images/PropertyHomepageImages/Listing2.png";
 import Listing3Image from "./images/PropertyHomepageImages/Listing3.png";
 import Listing4Image from "./images/PropertyHomepageImages/Listing4.png";
