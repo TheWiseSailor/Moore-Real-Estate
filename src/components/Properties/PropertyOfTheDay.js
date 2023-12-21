@@ -60,11 +60,15 @@ const PropertyOfTheDay = () => {
 
   return (
     <div className="PropertyOfTheDayBg">
-      <h1 className="pt-32">Property Details</h1>
+      <h1 className="pt-32 ">Property Details</h1>
       <Carousel showThumbs={false}>
         {property.images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Property ${property.id} - ${index + 1}`} />
+            <img
+              src={image}
+              className="PropertyImage"
+              alt={`mr-12: Property ${property.id} - ${index + 1}`}
+            />
           </div>
         ))}
       </Carousel>
