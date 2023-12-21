@@ -12,7 +12,7 @@
 }
 
 .PropertyImage {
-  width: 700px !important;
+  width: 700px;
   height: 400px;
 }
 
@@ -22,8 +22,8 @@
 
 @media (max-width: 600px) {
   .PropertyImage {
-    max-width: 60%;
-    max-height: 40%;
+    max-width: 100%;
+    max-height: 200px;
   }
   .PropertyDetails {
     font-size: 24px;
