@@ -76,12 +76,15 @@ const PropertyOfTheDay = () => {
       <div className="DetailsAndForm">
         <div className="PropertyDetails">
           <div className="DetailPropertyNameSize text-1xl ">
+            <div className="PropertyDetailsTitle font-bold ">
+              About This Property!
+            </div>
             <p>{property.price}</p>
             <p>{property.details}</p>
             <p>{property.address}</p>
           </div>
         </div>
-        <div className="ContactForm">
+        <div className="ContactForm ">
           <form>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" />
@@ -92,7 +95,7 @@ const PropertyOfTheDay = () => {
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message"></textarea>
 
-            <input type="submit" value="Submit" />
+            <input className="mb-6 mt-6" type="submit" value="Submit" />
           </form>
         </div>
       </div>
