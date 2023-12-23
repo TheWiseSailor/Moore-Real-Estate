@@ -92,13 +92,16 @@ const PropertyOfTheDay = () => {
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" />
 
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Your Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label htmlFor="email">Agent's Email:</label>
             <input type="email" id="email" name="email" />
 
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message"></textarea>
 
-            <input className="mb-6 mt-6" type="submit" value="Submit" />
+            <input className="mb-6 mt-6 " type="submit" value="Submit" />
           </form>
         </div>
       </div>
