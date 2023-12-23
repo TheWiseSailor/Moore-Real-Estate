@@ -75,11 +75,12 @@ const PropertyOfTheDay = () => {
 
       <div className="DetailsAndForm">
         <div className="PropertyDetails">
-          <p>{property.price}</p>
-          <p>{property.details}</p>
-          <p>{property.address}</p>
+          <div className="DetailPropertyNameSize text-1xl ">
+            <p>{property.price}</p>
+            <p>{property.details}</p>
+            <p>{property.address}</p>
+          </div>
         </div>
-
         <div className="ContactForm">
           <form>
             <label htmlFor="name">Name:</label>

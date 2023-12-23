@@ -21,12 +21,15 @@ li {
   align-items: center;
   background-color: rgb(193, 218, 226);
   padding: 20px;
+
+  height: 110vh;
 }
 
 /* CAROUSEL */
 
 .carousel-root {
   max-width: 700px;
+  margin-top: 140px;
 }
 
 .carousel .control-prev,
@@ -42,35 +45,43 @@ li {
   border-radius: 50px;
 
   height: 25px;
-  padding-top: 190px !important;
+  padding-top: 190px;
 }
 
 .carousel .control-next {
   margin-right: 20px;
   border-radius: 50px;
   height: 25px;
-  padding-top: 190px !important;
+  padding-top: 190px;
 }
 .PropertyImage {
   max-width: 700px;
-  height: 400px;
+  height: 500px;
 }
 
 .DetailsAndForm {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80%;
-  margin-bottom: 20px;
+  width: 42%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .PropertyDetails {
   text-align: left;
   font-size: 18px;
+  margin-top: 50px;
 }
 
 .ContactForm {
   max-width: 300px;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .ContactForm form {
@@ -98,19 +109,70 @@ li {
   padding: 10px 15px;
   font-size: 16px;
 }
-
+.DetailPropertyNameSize {
+  line-height: 3.5;
+  text-align: center;
+}
 /* media queries for mobile vieww */
 @media (max-width: 600px) {
   .PropertyImage {
     max-width: 100%;
     max-height: 250px;
-    margin-top: 100px;
   }
+
   .PropertyDetails {
-    font-size: 24px;
+    font-size: 34px !important;
     padding-top: 60px;
     padding-bottom: 30px;
     max-width: 300px;
     margin-bottom: -20px;
+    margin-top: -80px;
+  }
+
+  .DetailsAndForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .ContactForm form {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .PropertyOfTheDayBg {
+    height: 140vh;
+  }
+  .ContactForm input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .DetailPropertyNameSize {
+    text-align: center;
+  }
+}
+@media (min-width: 1001px) {
+  .PropertyImage {
+    max-width: 700px;
+    max-height: 500px !important;
+  }
+}
+@media (min-width: 1201px) {
+  .PropertyOfTheDayBg {
+    height: 140vh;
   }
 }
