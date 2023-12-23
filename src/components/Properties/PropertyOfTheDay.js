@@ -37,6 +37,9 @@ const PropertyOfTheDay = () => {
       details: "2 beds / 3 baths / 2000 sqft",
       address: "Charleston, SC",
     },
+
+    // populate the rest of the properties with new images
+    // then start working on the peroperties page
     {
       id: 3,
       images: [Listing3Image1, Listing3Image2, Listing3Image3],
