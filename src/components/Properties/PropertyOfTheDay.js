@@ -3,7 +3,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 import Listing1Image1 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1.png";
 import Listing1Image2 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image2.jpg";
 import Listing1Image3 from "../Properties/PropertyOfTheDayImages/Listing1/Listing1Image3.jpg";
@@ -60,11 +59,9 @@ const PropertyOfTheDay = () => {
   if (!property) {
     return <div>Property not found</div>;
   }
-
   return (
     <div className="PropertyOfTheDayBg">
-      {/* <h1 className="pt-32 ">this is not needed for now</h1> */}
-      <Carousel showThumbs={false}>
+      <Carousel className="Carousel" showThumbs={false}>
         {property.images.map((image, index) => (
           <div key={index}>
             <img
@@ -75,10 +72,28 @@ const PropertyOfTheDay = () => {
           </div>
         ))}
       </Carousel>
-      <div className="PropertyDetails">
-        <p className="">{property.price}</p>
-        <p className="">{property.details}</p>
-        <p className="">{property.address}</p>
+
+      <div className="DetailsAndForm">
+        <div className="PropertyDetails">
+          <p>{property.price}</p>
+          <p>{property.details}</p>
+          <p>{property.address}</p>
+        </div>
+
+        <div className="ContactForm">
+          <form>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </div>
   );

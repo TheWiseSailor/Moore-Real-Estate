@@ -1,37 +1,26 @@
-/* PropertyOfTheDay.module.css */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 .PropertyOfTheDayBg {
-  background-color: rgb(193, 218, 226);
-  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-}
-
-.PropertyImage {
-  width: 700px;
-  height: 400px;
-}
-
-.PropertyDetails {
-  font-size: 28px;
-}
-
-@media (max-width: 600px) {
-  .PropertyImage {
-    max-width: 100%;
-    max-height: 400px;
-  }
-  .PropertyDetails {
-    font-size: 24px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    max-width: 300px;
-    margin-bottom: -20px;
-  }
+  background-color: rgb(193, 218, 226);
+  padding: 20px;
 }
 
 /* CAROUSEL */
@@ -53,7 +42,6 @@
   border-radius: 50px;
 
   height: 25px;
-
   padding-top: 190px !important;
 }
 
@@ -62,4 +50,67 @@
   border-radius: 50px;
   height: 25px;
   padding-top: 190px !important;
+}
+.PropertyImage {
+  max-width: 700px;
+  height: 400px;
+}
+
+.DetailsAndForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.PropertyDetails {
+  text-align: left;
+  font-size: 18px;
+}
+
+.ContactForm {
+  max-width: 300px;
+}
+
+.ContactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactForm label {
+  margin-bottom: 5px;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.ContactForm input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* media queries for mobile vieww */
+@media (max-width: 600px) {
+  .PropertyImage {
+    max-width: 100%;
+    max-height: 250px;
+    margin-top: 100px;
+  }
+  .PropertyDetails {
+    font-size: 24px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    max-width: 300px;
+    margin-bottom: -20px;
+  }
 }
