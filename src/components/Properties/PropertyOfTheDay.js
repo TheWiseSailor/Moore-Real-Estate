@@ -86,6 +86,9 @@ const PropertyOfTheDay = () => {
         </div>
         <div className="ContactForm ">
           <form>
+            <div className="ContactFormTitle font-bold text-2xl">
+              Contact Your Agent!
+            </div>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" />
 

@@ -19,6 +19,7 @@
 .PropertyDetailsTitle {
   padding-top: 30px;
   font-size: 26px;
+  color: #f69314;
 }
 .PropertyDetails {
   font-size: 28px;
@@ -26,6 +27,7 @@
   padding: 15px;
   background-color: #fff;
   border-radius: 30px;
+  max-height: 300px;
 }
 
 .DetailsAndForm {
@@ -60,7 +62,9 @@
   display: block;
   margin-bottom: 5px;
 }
-
+.ContactFormTitle {
+  color: #f69314;
+}
 .ContactForm input,
 .ContactForm textarea {
   width: 100%;
