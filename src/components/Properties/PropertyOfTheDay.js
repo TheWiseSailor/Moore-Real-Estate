@@ -28,6 +28,7 @@ const PropertyOfTheDay = () => {
       price: "$1,200,000 / $12-20k Month",
       details: "3 beds / 2 baths / 3500 sqft",
       address: "Wilmington, NC",
+      agent: "Samantha Bennett",
     },
     {
       id: 2,
@@ -82,6 +83,8 @@ const PropertyOfTheDay = () => {
             <p>{property.price}</p>
             <p>{property.details}</p>
             <p>{property.address}</p>
+            <>Agent</>
+            <p>{property.agent}</p>
           </div>
         </div>
         <div className="ContactForm ">
@@ -93,9 +96,6 @@ const PropertyOfTheDay = () => {
             <input type="text" id="name" name="name" />
 
             <label htmlFor="email">Your Email:</label>
-            <input type="email" id="email" name="email" />
-
-            <label htmlFor="email">Agent's Email:</label>
             <input type="email" id="email" name="email" />
 
             <label htmlFor="message">Message:</label>
